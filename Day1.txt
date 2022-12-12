@@ -1,1 +1,24 @@
 
+
+
+
+
+
+Demo - How to install Agent in linux (Centos7)
+
+
+DD_API_KEY=6766151465527b9b8e9327bd7d719b9f DD_SITE="datadoghq.com" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script_agent7.sh)"
+
+https://www.devopsschool.com/blog/how-to-install-datadog-agent-in-centos/
+https://www.devopsschool.com/blog/how-to-install-datadog-agent-in-ubuntu/
+
+
+Sumit Kumar			34.230.41.155
+Harshdeep Kalra		3.92.225.251
+Pawan Kumar			54.211.64.135
+Santosh Waghmare		3.88.205.10
+Rohit Arora			3.82.106.204
+Nelson Thangaraj		34.207.128.135
+Sayed Ibrahim			54.175.205.144
+
+Rajesh  - 3.93.242.135
