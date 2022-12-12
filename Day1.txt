@@ -1,13 +1,7 @@
-
-
-
-
-
-
 Demo - How to install Agent in linux (Centos7)
 
 
-DD_API_KEY=6766151465527b9b8e9327bd7d719b9f DD_SITE="datadoghq.com" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script_agent7.sh)"
+DD_API_KEY= DD_SITE="datadoghq.com" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script_agent7.sh)"
 
 https://www.devopsschool.com/blog/how-to-install-datadog-agent-in-centos/
 https://www.devopsschool.com/blog/how-to-install-datadog-agent-in-ubuntu/
@@ -22,3 +16,19 @@ Nelson Thangaraj		34.207.128.135
 Sayed Ibrahim			54.175.205.144
 
 Rajesh  - 3.93.242.135
+=================================================
+
+54.147.223.236
+administrator
+6yOMH&*4.LBYqfJ$=fdZSa*5)@CCU&&p
+
+https://www.devopsschool.com/blog/datadog-agent-setup-in-windows-step-by-step-guide/
+https://www.devopsschool.com/blog/how-to-enable-live-process-monitoring-in-datadog-agent/
+
+Sumit Kumar		$u(4Mfh%lYo)zm;l5=.YGZJi5sb8.xTN		54.85.134.186		
+Harshdeep Kalra	hNfXgv(&fh*Va;bUgCDZ9c3vb)AjdCR(		18.209.9.167
+Pawan Kumar		mU4!Ud5dBOmPK9*S!H%RuTQNSy3?MUM5		174.129.185.54		
+Santosh Waghmare	x=B3D(mg(psDMgt%UxC&fHeOSSz.mF@a		3.89.101.18			
+Rohit Arora		&*em)h!KXHpHvh%24rs;z)JmhwbHKO(&		18.214.100.69	
+Nelson Thangaraj	IMeoiX768uiRM!J8F=.h(i9;Mg?MLV5f		18.208.219.160
+Sayed Ibrahim		.sI2h;fJlNPt6VaEz5Hk(Wc!fNBmko.=		54.226.57.141
