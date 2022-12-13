@@ -1,0 +1,74 @@
+Infra + APM + Log + Syn | RUM
+===============================
+		Alert+Dashboard
+Collection - Integration
+----------------------
+PLATFORM - LINUX + WINDOWS
+WEB		 - Apache
+APP	     - Tomcat
+DB		 - MYSQL
+Container - DOCKER
+Cloud - AWS
+
+44.203.147.181
+
+DogstashD
+Network Monitoring
+
+
+
+Notification - MOnitoring
+---------
+Slack
+Team
+========================================================
+How to monitor Tomcat using Datadog?
+https://www.devopsschool.com/blog/how-to-enable-apache-tomcat-monitoring-in-datadog-agent/
+
+
+CATALINA_OPTS="-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9012 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false"
+
+
+
+
+instances:
+
+    ## @param host - string - required
+    ## Tomcat JMX hostname to connect to.
+    #
+  - host: localhost
+
+    ## @param port - integer - required
+    ## Tomcat JMX port to connect to.
+    #
+    port: 9012
+  - host: localhost
+
+    ## @param port - integer - required
+    ## Tomcat JMX port to connect to.
+    #
+    port: 9012
+  - host: localhost
+
+    ## @param port - integer - required
+    ## Tomcat JMX port to connect to.
+    #
+    port: 9012
+
+
+
+Sumit Kumar			174.129.119.128			
+Harshdeep Kalra		18.212.21.111		
+Pawan Kumar			3.84.13.47	
+Santosh Waghmare		3.89.246.15
+Rohit Arora			34.238.52.111		
+Nelson Thangaraj		44.211.168.66	
+Sayed Ibrahim			54.205.29.253	
+https://www.devopsschool.com/blog/how-to-enable-apache-tomcat-monitoring-in-datadog-agent/
+
+
+
+
+
+
+
