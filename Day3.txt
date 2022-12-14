@@ -1,0 +1,44 @@
+Sumit Kumar				3.87.154.139	
+Harshdeep Kalra			54.196.208.138	
+Pawan Kumar				23.20.206.212	
+Santosh Waghmare			23.20.32.135	
+Rohit Arora				54.91.199.127		
+Nelson Thangaraj			54.164.123.0	
+Sayed Ibrahim				34.227.221.36		
+
+
+https://www.devopsschool.com/blog/how-to-setup-datadog-apm-for-java-application-running-with-tomcat/
+
+================================================================
+How to setup APM with Datadog? - JAVA
+
+
+Step 1 - Install Datadog Agent - Infra			DONE
+
+Step 2 - Install JAVA							DONE
+
+Step 3 - Install TOMCAT							DONE
+
+Step 4 - Install APPS (Use Tomcat App's)		DONE
+
+Step 5 - Install APM Agent in TOMCAT
+
+CATALINA_OPTS="$CATALINA_OPTS -javaagent:/opt/dd-java-agent.jar -Ddd.profiling.enabled=true -Ddd.logs.injection=true -Ddd.trace.sample.rate=1 -Ddd.service=devopsschool-chat -Ddd.env=prod -Ddd.version=1.0"
+
+Step 6 - Install Jmeter and Create a Load to the websites
+https://www.devopsschool.com/blog/how-to-install-and-configure-jemeter/
+
+http://44.204.154.218:8080/examples/servlets/servlet/HelloWorldExample
+
+Basic Workflow of Jemeter
+==================================
+Step 1- Add a thread group under test plan. Thread define number of users. 
+Step 2- Set number of users
+Step 3- Add HTTP request sampler
+Step 4- Configure your sampler
+Step 5- Add Multiple listener as per the image
+
+Advance - https://www.guru99.com/jmeter-performance-testing.html
+
+
+Step 7 - Understand Datadog APM Dashboard
