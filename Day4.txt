@@ -1,0 +1,86 @@
+54.167.71.82
+
+
+The secure TCP endpoint is intake.logs.datadoghq.com(or port 10514 for nonsecure connections).
+
+telnet intake.logs.datadoghq.com 10514
+b7a615a3462917597203c41ab01272fb Plain text log sent through TCP
+
+b7a615a3462917597203c41ab01272fb
+
+telnet intake.logs.datadoghq.com 10514
+b7a615a3462917597203c41ab01272fb {"message":"JSON formatted log sent through TCP", "ddtags":"env:dev", "ddsource":"terminal", "hostname":"gs-hostame", "service":"user"}
+
+
+https://www.devopsschool.com/blog/datadog-tutorials-send-log-to-datadog-using-api-through-telnet-and-curl/
+
+curl -X POST "https://http-intake.logs.datadoghq.com/api/v2/logs" \
+-H "Content-Type: application/json" \
+-H "DD-API-KEY: b7a615a3462917597203c41ab01272fb" \
+-d @- << EOF
+[
+  {
+    "ddsource": "nginx",
+    "ddtags": "env:staging,version:5.1",
+    "hostname": "i-012345678",
+    "message": "2019-11-19T14:37:58,995 INFO [process.name][20081] Hello World",
+    "service": "payment"
+  }
+]
+EOF
+
+https://www.devopsschool.com/blog/datadog-tutorials-log-collection-process-configuration/
+https://www.devopsschool.com/blog/datadog-tutorials-log-collection-process-configuration/
+https://www.devopsschool.com/blog/datadog-log-filter-logs-scrub-data-tail-with-wildcards/
+https://www.devopsschool.com/blog/datadog-tutorials-send-log-to-datadog-using-api-through-telnet-and-curl/
+https://www.devopsschool.com/blog/datadog-tutorial-win32_event_log-log-setup-using-powershell/
+=========================================
+- Install the Datadog Agent
+
+- Verify Datadog Agent Status and Look for "Logs Agent" which is not running.
+$ sudo datadog-agent status
+
+- Enable log collection
+To enable log collection with the Agent, edit the datadog.yaml configuration file located at /etc/datadog-agent/datadog.yaml and set logs_enabled:true
+
+- Monitor a custom file
+$ touch log_file_to_monitor.log
+$ echo "First line of log" >> log_file_to_monitor.log
+$ sudo mkdir /etc/datadog-agent/conf.d/custom_log_collection.d/
+$ sudo touch /etc/datadog-agent/conf.d/custom_log_collection.d/conf.yaml
+logs:
+    - type: file
+      path: /var/log/httpd/access_log
+      source: linux
+      service: http
+$ sudo service datadog-agent restart
+
+-  Validation. Verify Dsudo datadog-agent status
+atadog Agent Status and Look for "Logs Agent" which is running.
+$
+- Add new logs to the file
+$ echo "New line of log in the log file" >> log_file_to_monitor.log
+
+
+-	rwx	r-x		r-x.
+	ower	group 	other
+
+
+
+--------- 
+Apache
+Tomcat Log
+Linux Logs
+
+
+LINUX
+===================================
+Sumit Kumar				52.91.62.88					
+Harshdeep Kalra			3.90.11.75			
+Pawan Kumar				18.234.208.141		
+Santosh Waghmare			54.85.172.92					
+Rohit Arora				44.211.226.24			
+Nelson Thangaraj			52.87.162.125			
+Sayed Ibrahim				3.94.109.137			
+
+
